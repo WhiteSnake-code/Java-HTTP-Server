@@ -1,0 +1,68 @@
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Use min-height to allow content to grow */
+            margin: 0;
+            padding: 20px; /* Add some padding */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+        .container {
+            background-color: #1e1e1e; /* Darker background for the container */
+            text-align: center;
+            padding: 2.5rem;
+            border: 2px solid #00ff88;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 255, 136, 0.3);
+            max-width: 500px; /* Limit container width */
+            width: 100%; /* Make it responsive */
+        }
+        h1 { color: #00ff88; margin-bottom: 25px; }
+        p { margin-bottom: 20px; line-height: 1.6; }
+        
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #b0b0b0;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: calc(100% - 20px); /* Adjust width for padding */
+            padding: 10px;
+            border: 1px solid #00ff88;
+            border-radius: 8px;
+            background-color: #2a2a2a;
+            color: #ffffff;
+            font-size: 1rem;
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+        .form-group textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 100px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #00ff88;
+            color: #121212;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #00e676;
+            transform: translateY(-2px);
+        }
